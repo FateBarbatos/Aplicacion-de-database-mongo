@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Aplicacion_de_database_mongo</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
+    <PackageReference Include="System.IO.Ports" Version="8.0.0-rc.1.23419.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DAL\" />
+    <Folder Include="BLL\" />
+    <Folder Include="PL\" />
+  </ItemGroup>
+
+</Project>
